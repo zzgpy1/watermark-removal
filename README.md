@@ -34,6 +34,7 @@ And also a shoutout to [Chu-Tak Li](https://chutakcode.wixsite.com/website) for 
 2. From the repository root, build a Docker image with the command `docker build -t watermark-removal .`
 3. Download the model dir using this [link](https://drive.google.com/drive/folders/1xRV4EdjJuAfsX9pQme6XeoFznKXG0ptJ?usp=sharing).
 4. Create and run a docker container with the image you built using the command:
+
 ```bash
 docker run --rm -v '<path_to_model_dir>:/repo/model' -v '<path_to_input_dir>:/input' -v '<path_to_output_dir>:/output' watermark-removal --checkpoint_dir /repo/model --image '/input/<input_image_file>' --output '/output/<output_image_file>' --watermark_type istock
 ```
@@ -65,6 +66,13 @@ And you're all Set!!
 - Now remove the watermark on the image by runing the `main.py` file
 
       !python main.py --image path-to-input-image --output path-to-output-image --checkpoint_dir model/ --watermark_type istock
+
+## Citation
+
+If you use this in your research, please cite:
+
+Zuruoke (2021). _Watermark Removal: a machine learning image inpainting task_.
+GitHub Repository. https://doi.org/10.5281/zenodo.20551267
 
 ## Citing
 

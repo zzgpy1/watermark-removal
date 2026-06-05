@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Zuruoke
+title: "Watermark Removal: a machine learning image inpainting task"
+version: 1.0.0
+doi: 10.5281/zenodo.20551267
+date-released: 2021-01-01
+url: "https://github.com/zuruoke/watermark-removal"
